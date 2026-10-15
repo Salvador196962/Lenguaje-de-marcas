@@ -11,43 +11,47 @@
 		<hr>
 			<h1> Etiquetas relacionadas con texto </h1>
 			<br>
-				<li>
-					<ul> <a href="#encabezados"> Encabezados </a> </ul>
-					<ul> <a href="#formato"> Etiquetas de formato </a> </ul>
-					<ul> <a href="#parrafos"> Párrafos </a> </ul>
-					<ul> <a href="#pre"> Preformateado </a> </ul>
-					<ul> <a href="#br"> Salto de línea </a> </ul>
-					<ul> <a href="#hr"> Línea de separación </a> </ul>
-				</li>
+				<ul>
+					<li> <a href="#encabezados"> Encabezados </a> </li>
+					<li> <a href="#formato"> Etiquetas de formato </a> </li>
+					<li> <a href="#parrafos"> Párrafos </a> </li>
+					<li> <a href="#pre"> Preformateado </a> </li>
+					<li> <a href="#br"> Salto de línea </a> </li>
+					<li> <a href="#hr"> Línea de separación </a> </li>
+					<li> <a href="#estructura"> Estructura </a> </li>
+					<li> <a href="#listas"> Listas </a> </li>
+					<li> <a href="#comentarios"> Comentarios </a> </li>
+					<li> <a href="#marquee"> Texto en movimiento </a> </li>
+				</ul>
 			<br>
 			
 			<h3 id="encabezados"> Encabezados </h3>
 				<p> Representan elementos de encabezado
-				Tienen distintos niveles de importancia, &lt h1 &gt es el más importante y el &lt h6 &gt el menos.
+				Tienen distintos niveles de importancia, &lt; h1 &gt; es el más importante y el &lt; h6 &gt; el menos. </p>
 					<h1> Encabezado de nivel 1 </h1>
 					<h2> Encabezado de nivel 2 </h2>
 					<h3> Encabezado de nivel 3 </h3>
 					<h4> Encabezado de nivel 4 </h4>
 					<h5> Encabezado de nivel 5 </h5>
 					<h6> Encabezado de nivel 6 </h6>
-				</p>
+				
 			
 			<br>
 			
 			<h3 id="formato"> Hay multitud, todas le dan cierto estilo al texto que contienen. Por ejemplo: </h3>
-				<li>
-					<ul> Negrita: b. <b> Ejemplo </b> </ul>
-					<ul> Cursiva: i. <i> Ejemplo </i> </ul>
-					<ul> Tachado: del. <del> Ejemplo </del> </ul>
-					<ul> Énfasis: em. <em> Ejemplo </em> </ul>
-				</li>
+				<ul>
+					<li> Negrita: b. <b> Ejemplo </b> </li>
+					<li> Cursiva: i. <i> Ejemplo </i> </li>
+					<li> Tachado: del. <del> Ejemplo </del> </li>
+					<li> Énfasis: em. <em> Ejemplo </em> </li>
+				</ul>
 			
-			<h3 id="parrafos"> &lt p &gt delimita un párrafo del texto: </h3>
+			<h3 id="parrafos"> &lt; p &gt; delimita un párrafo del texto: </h3>
 				<p>
 					Este texto está dentro de un párrafo.
 					Las tabulaciones, saltos de línea y los espacios      múltiples se ignoran.
 				</p>
-			<h3 id="pre"> &lt pre &gt delimita un párrafo del texto respetando los espacios: </h3>
+			<h3 id="pre"> &lt; pre &gt; delimita un párrafo del texto respetando los espacios: </h3>
 				<pre>
 					Este texto está en un elemento pre.
 						Los saltos de línea y los espacios		múltiples se respetan.
@@ -56,7 +60,7 @@
 			<br>
 			
 			<p id="br">
-				&lt br &gt crea
+				&lt; br &gt; crea
 				<br>
 				un salto de línea.
 			</p>
@@ -66,31 +70,68 @@
 				<p> He incluido una linea horizontal. No lleva etiqueta de cierre porque no contiene texto. </p>
 				
 			<hr>
+			
+			<h3 id="estructura"> Etiquetas de estructura del texto </h3>
+				<p> Existen tres etiquetas para organizar y colocar bloques de texto: </p>
+				<ul>
+					<li> <a href="#div"> &lt;div&gt;: </a> Agrupa contenido en un bloque. El espacio entre bloques es menor que con &lt;p&gt;. </li>
+					<li> <a href="#center"> &lt;center&gt;: </a> Centra el texto que lleva dentro. <b> Está obsoleta. </b> </li>
+					<li> <a href="#blockquote"> &lt;blockquote&gt;: </a> Crea una sangría. Si se anidan varias, la sangría es mayor. </li>
+				</ul>
+ 
+				<h4 id="div"> div </h4>
+					<div> Este texto está dentro de un div. </div>
+					<div> Este es otro div, fíjate en el poco espacio que hay entre ellos. </div>
+				<h4 id="center"> center </h4>
+					<center> Este texto está centrado. </center>
+				<h4 id="blockquote"> blockquote </h4>
+					<blockquote> Este texto tiene una sangría. </blockquote>
+					<blockquote>
+						<blockquote> Este texto tiene el doble de sangría. </blockquote>
+					</blockquote>
+				
+			<hr>
+			
+				<h3 id="listas"> Listas </h3>
+				<p> &lt;ol&gt; crea una lista numerada. Cada elemento va dentro de un &lt;li&gt;: </p>
+				<ol>
+					<li> Primer elemento </li>
+					<li> Segundo elemento </li>
+					<li> Tercer elemento </li>
+				</ol>
+				
+			<hr>
+			
+				<h3 id="comentarios"> Comentarios </h3>
+				<p> Se escriben entre &lt;!-- y --&gt;. No se muestran en el navegador, solo se ven en el código: </p>
+					<!-- Este comentario no se ve en la página -->
+				<p> Arriba hay un comentario escondido, solo aparece en el HTML </p>
+
 				
 			<h1> Etiquetas relacionadas con imágenes y enlaces </h1>
 			
 			<br>
 			
-			<li>
-				<ul> <a= href="#img"> Imágenes </a> </ul>
-				<ul> <a= href="#figuras"> Figuras </a> </ul>
-				<ul> <a= href="#enlaces"> Enlaces </a> </ul>
-			</li>
+			<ul>
+				<li> <a href="#img"> Imágenes </a> </li>
+				<li> <a href="#figuras"> Figuras </a> </li>
+				<li> <a href="#enlaces"> Enlaces </a> </li>
+			</ul>
 			<br>
 			
 			<h3 id="img"> Permite incluir imágenes </h3>
 				<p> Existen tres tipos de ruta:
-					<li>
-						<ul> <a href="#relativa"> Relativa: </a> Toman como base el directorio en el que se encuentra nuestro fichero. Son las recomendadas. </ul>
-						<ul> <a href="#absoluta"> Absoluta: </a> Toman como base el directorio raíz de mi equipo (/ en Linux y c:\ en Windows). <b> Cuidado, sólo
-							funcionarán en tu mismo equipo. </b> </ul>
-						<ul> <a href="#url"> Url: </a> La dirección de Internet de un recurso (fichero, imagen etc..). Puede desaparecer y entonces dejará de
-							mostrarse en nuestra web. </ul>
-					</li>
+					<ul>
+						<li> <a href="#relativa"> Relativa: </a> Toman como base el directorio en el que se encuentra nuestro fichero. Son las recomendadas. </li>
+						<li> <a href="#absoluta"> Absoluta: </a> Toman como base el directorio raíz de mi equipo (/ en Linux y c:\ en Windows). <b> Cuidado, sólo
+							funcionarán en tu mismo equipo. </b> </li>
+						<li> <a href="#url"> Url: </a> La dirección de Internet de un recurso (fichero, imagen etc..). Puede desaparecer y entonces dejará de
+							mostrarse en nuestra web. </li>
+					</ul>
 				</p>
 				
 				<h4 id="relativa"> Ruta relativa </h4>
-					<img src="img\images.jpg" alt="gol Parrot vs Lille" width="500">
+					<img src="img/J-2-Real-Betis-vs-Oporto.507.jpg" alt="gol Isco vs Oporto" width="500">
 				<h4 id="absoluta"> Ruta absoluta </h4>
 					<img src="\\srv-docedu\1daw\1daw23\Escritorio\LMSGI\mis_html\img\tortilla 2.jpg" alt="tortilla de patatas" width="500">
 				<h4 id="url"> URL </h4>
@@ -98,8 +139,10 @@
 					
 			<h3 id="figuras"> Agrupa contenido visual o independiente </h3>
 				<figure>
-					<img src="img\fekir olimpico.png" alt="Nabil Fekir" width="500">
+					<img src="img/fekir olimpico.png" alt="Nabil Fekir" width="500">
 					<figcaption> Gol olímpico de Fekir contra el Sevilla FC </figcaption>
+				</figure>
 			<h3 id="enlaces"> Permite insertar enlaces externos </h3>
+				<a href="https://www.realbetisbalompie.es" target="_blank">RBB</a>
 	</body>
 </html>
